@@ -1,0 +1,6 @@
+.DS_Store
+# API runtime flag files and local overrides on the portal
+portal/api/v1/.schema-*
+portal/api/v1/config.local.php
+# Copies of the portal's VuCMS core files for staging (licensed code, copy from the server: see tools/staging/up.sh)
+tools/staging/core/
