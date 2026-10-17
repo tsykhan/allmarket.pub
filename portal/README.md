@@ -1,7 +1,7 @@
 # allmarket.biz Seller API — серверна частина порталу
 
 Реалізація контракту [allmarketsync/docs/API.md](../allmarketsync/docs/API.md) на боці порталу
-allmarket.biz (VuCMS 4.6). API — окремий PHP-код у `/api/v1/`, який напряму працює з таблицями
+allmarket.biz. API — окремий PHP-код у `/api/v1/`, який напряму працює з таблицями
 порталу і не завантажує ядро. Сторінка продавця — вкладка «Інтернет-магазин» у розділі кабінету
 «Інтеграції» (`integrations.php?kind=shop&action=shopapi`); характеристики товарів пишуться через
 модуль порталу «Характеристики» (`module/multitrade/features.api.php`).
