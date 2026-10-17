@@ -27,7 +27,7 @@
 `/products/delete`, `/orders`, `/orders/{id}/ack`, `/orders/{id}/status`). Робочий приклад —
 мок-сервер [tools/mock_allmarket.php](tools/mock_allmarket.php).
 
-Серверна частина для порталу (VuCMS) — у [portal/](portal/README.md): `/api/v1/`, сторінка кабінету
+Серверна частина для порталу — у [portal/](portal/README.md): `/api/v1/`, сторінка кабінету
 продавця з API-ключем, cron вебхуків, staging у Docker. Перевірена з цим модулем на копії БД порталу,
 на продакшн ще не встановлена.
 
