@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!--
+    allmarket.biz Sync — exchange of a CS-Cart store with the allmarket.biz marketplace.
+
+    Speaks the same Seller API as the PrestaShop module allmarketsync (docs/API.md):
+      * catalog: categories (with placement rules on the portal), products and
+        variations with features, hash-based price/stock sync, removal of
+        products that left the export;
+      * orders: import of allmarket.biz orders (polling or webhook), status and
+        tracking number push back to the portal;
+      * XML feed (YML) as an alternative to the API.
+-->
+<addon scheme="3.0">
+    <id>allmarket_sync</id>
+    <version>1.0.0</version>
+    <priority>4500</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>uk</default_language>
+
+    <compatibility>
+        <core_version>
+            <min>4.11.1</min>
+        </core_version>
+        <php_version>
+            <min>7.1.0</min>
+        </php_version>
+    </compatibility>
+
+    <autoload>
+        <psr4 prefix="Tygh\Addons\AllmarketSync\">src</psr4>
+    </autoload>
+
+    <functions>
+        <item for="install">fn_allmarket_sync_install</item>
+        <item for="uninstall">fn_allmarket_sync_uninstall</item>
+    </functions>
+
+    <settings layout="separate">
+        <sections>
+            <section id="connection">
+                <items>
+                    <item id="mode">
+                        <type>selectbox</type>
+                        <default_value>api</default_value>
+                        <variants>
+                            <item id="api"></item>
+                            <item id="feed"></item>
+                            <item id="both"></item>
+                        </variants>
+                    </item>
+                    <item id="api_url">
+                        <type>input</type>
+                        <default_value>https://allmarket.biz/api/v1</default_value>
+                    </item>
+                    <item id="api_key">
+                        <type>password</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="shop_id">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="info">
+                        <type>template</type>
+                        <default_value>info.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="catalog">
+                <items>
+                    <item id="lang_code">
+                        <type>selectbox</type>
+                        <default_value>uk</default_value>
+                    </item>
+                    <item id="currency">
+                        <type>selectbox</type>
+                        <default_value>UAH</default_value>
+                    </item>
+                    <item id="categories">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="variations">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="only_in_stock">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="price_markup">
+                        <type>input</type>
+                        <default_value>0</default_value>
+                    </item>
+                    <item id="batch_size">
+                        <type>input</type>
+                        <default_value>100</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="orders">
+                <items>
+                    <item id="orders_enabled">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="status_new">
+                        <type>selectbox</type>
+                        <default_value>O</default_value>
+                    </item>
+                    <item id="status_paid">
+                        <type>selectbox</type>
+                        <default_value>P</default_value>
+                    </item>
+                    <item id="shipping_id">
+                        <type>selectbox</type>
+                        <default_value>0</default_value>
+                    </item>
+                    <item id="payment_id">
+                        <type>selectbox</type>
+                        <default_value>0</default_value>
+                    </item>
+                    <item id="default_country">
+                        <type>input</type>
+                        <default_value>UA</default_value>
+                    </item>
+                    <item id="use_am_prices">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="use_am_shipping">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="notify_customer">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="notify_admin">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:allmarket_sync_items (
+                company_id int(11) unsigned NOT NULL DEFAULT '0',
+                product_id int(11) unsigned NOT NULL,
+                content_hash char(32) NOT NULL DEFAULT '',
+                offer_hash char(32) NOT NULL DEFAULT '',
+                status varchar(16) NOT NULL DEFAULT 'active',
+                date_content int(11) unsigned NOT NULL DEFAULT '0',
+                date_offer int(11) unsigned NOT NULL DEFAULT '0',
+                PRIMARY KEY (company_id, product_id)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:allmarket_sync_orders (
+                link_id int(11) unsigned NOT NULL AUTO_INCREMENT,
+                company_id int(11) unsigned NOT NULL DEFAULT '0',
+                am_order_id varchar(64) NOT NULL DEFAULT '',
+                am_number varchar(64) NOT NULL DEFAULT '',
+                order_id int(11) unsigned NOT NULL DEFAULT '0',
+                am_status varchar(32) NOT NULL DEFAULT '',
+                pushed_status varchar(32) NOT NULL DEFAULT '',
+                pending_status varchar(32) NOT NULL DEFAULT '',
+                acked tinyint(1) unsigned NOT NULL DEFAULT '0',
+                attempts tinyint(3) unsigned NOT NULL DEFAULT '0',
+                error text,
+                payload mediumtext,
+                created int(11) unsigned NOT NULL DEFAULT '0',
+                updated int(11) unsigned NOT NULL DEFAULT '0',
+                PRIMARY KEY (link_id),
+                UNIQUE KEY am_order (company_id, am_order_id),
+                KEY order_id (order_id)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:allmarket_sync_log (
+                log_id int(11) unsigned NOT NULL AUTO_INCREMENT,
+                company_id int(11) unsigned NOT NULL DEFAULT '0',
+                level varchar(10) NOT NULL DEFAULT 'info',
+                task varchar(32) NOT NULL DEFAULT '',
+                message text,
+                timestamp int(11) unsigned NOT NULL DEFAULT '0',
+                PRIMARY KEY (log_id),
+                KEY company_id (company_id)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:allmarket_sync_items;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:allmarket_sync_orders;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:allmarket_sync_log;</item>
+    </queries>
+
+    <!-- Language variables ship as .po files under var/langs/<lang>/addons/allmarket_sync.po -->
+</addon>

@@ -1,0 +1,474 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+
+msgctxt "Addons::name::allmarket_sync"
+msgid "allmarket.biz Sync"
+msgstr "Synchronizacja z allmarket.biz"
+
+msgctxt "Addons::description::allmarket_sync"
+msgid "Exchange with the allmarket.biz marketplace: catalog with categories and variations, prices and stock, orders and statuses (Seller API or XML feed)."
+msgstr "Wymiana z marketplace allmarket.biz: katalog z kategoriami i wariantami, ceny i stany, zamówienia i statusy (Seller API lub feed XML)."
+
+msgctxt "Languages::allmarket_sync"
+msgid "allmarket.biz"
+msgstr "allmarket.biz"
+
+msgctxt "Languages::allmarket_sync_menu_description"
+msgid "Exchange of the catalog and orders with the allmarket.biz marketplace"
+msgstr "Wymiana katalogu i zamówień z marketplace allmarket.biz"
+
+msgctxt "Languages::allmarket_sync_manage"
+msgid "Exchange"
+msgstr "Wymiana"
+
+msgctxt "Languages::allmarket_sync_manage_menu_description"
+msgid "Connection, tasks, orders and log"
+msgstr "Połączenie, zadania, zamówienia i dziennik"
+
+msgctxt "Languages::allmarket_sync_categories"
+msgid "Category placement"
+msgstr "Rozmieszczenie kategorii"
+
+msgctxt "Languages::allmarket_sync_categories_menu_description"
+msgid "Where shop categories go on allmarket.biz"
+msgstr "Gdzie trafiają kategorie sklepu na allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.task_done"
+msgid "Task [task] finished: [stats]"
+msgstr "Zadanie [task] zakończone: [stats]"
+
+msgctxt "Languages::allmarket_sync.ping_ok"
+msgid "Connected: [name] (ID [id]), seller currency on the portal: [currency]"
+msgstr "Połączono: [name] (ID [id]), waluta sprzedawcy na portalu: [currency]"
+
+msgctxt "Languages::allmarket_sync.currency_mismatch"
+msgid "Your seller currency on allmarket.biz is [portal], while the add-on exports prices in [shop]. The portal converts them at its rate; set the same currency to avoid differences."
+msgstr "Waluta sprzedawcy na allmarket.biz to [portal], a moduł eksportuje ceny w [shop]. Portal przeliczy je po swoim kursie; ustaw tę samą walutę, aby uniknąć różnic."
+
+msgctxt "Languages::allmarket_sync.secret_reset"
+msgid "The key has been changed. Update it in the allmarket.biz cabinet and in your cron."
+msgstr "Klucz został zmieniony. Zaktualizuj go w panelu allmarket.biz i w cronie."
+
+msgctxt "Languages::allmarket_sync.placement_saved"
+msgid "Placement rules saved: [count]"
+msgstr "Zapisano reguł rozmieszczenia: [count]"
+
+msgctxt "Languages::allmarket_sync.portal_cats_loaded"
+msgid "allmarket.biz categories loaded: [count]"
+msgstr "Wczytano kategorii allmarket.biz: [count]"
+
+msgctxt "Languages::allmarket_sync.connection"
+msgid "Connection"
+msgstr "Połączenie"
+
+msgctxt "Languages::allmarket_sync.status"
+msgid "Status"
+msgstr "Stan"
+
+msgctxt "Languages::allmarket_sync.configured"
+msgid "API key is set"
+msgstr "Klucz API ustawiony"
+
+msgctxt "Languages::allmarket_sync.not_configured"
+msgid "API URL or key is not set"
+msgstr "Nie ustawiono adresu API lub klucza"
+
+msgctxt "Languages::allmarket_sync.mode"
+msgid "Mode"
+msgstr "Tryb"
+
+msgctxt "Languages::allmarket_sync.mode_api"
+msgid "API"
+msgstr "API"
+
+msgctxt "Languages::allmarket_sync.mode_feed"
+msgid "XML feed"
+msgstr "Feed XML"
+
+msgctxt "Languages::allmarket_sync.mode_both"
+msgid "API + XML feed"
+msgstr "API + feed XML"
+
+msgctxt "Languages::allmarket_sync.check_connection"
+msgid "Check connection"
+msgstr "Sprawdź połączenie"
+
+msgctxt "Languages::allmarket_sync.tasks"
+msgid "Tasks"
+msgstr "Zadania"
+
+msgctxt "Languages::allmarket_sync.task"
+msgid "Task"
+msgstr "Zadanie"
+
+msgctxt "Languages::allmarket_sync.last_run"
+msgid "Last run"
+msgstr "Ostatnie uruchomienie"
+
+msgctxt "Languages::allmarket_sync.result"
+msgid "Result"
+msgstr "Wynik"
+
+msgctxt "Languages::allmarket_sync.run"
+msgid "Run"
+msgstr "Uruchom"
+
+msgctxt "Languages::allmarket_sync.force"
+msgid "Force (resend everything, delete without the safety check)"
+msgstr "Wymuś (wyślij wszystko, usuwaj bez kontroli)"
+
+msgctxt "Languages::allmarket_sync.force_help"
+msgid "Without it only changes are sent, and if more than half of the products disappear from the export at once they are not deleted on the portal."
+msgstr "Bez tego wysyłane są tylko zmiany, a jeśli z eksportu zniknie ponad połowa produktów, nie są one usuwane z portalu."
+
+msgctxt "Languages::allmarket_sync.items_on_portal"
+msgid "Products known to the portal"
+msgstr "Produkty znane portalowi"
+
+msgctxt "Languages::allmarket_sync.task_catalog"
+msgid "Catalog"
+msgstr "Katalog"
+
+msgctxt "Languages::allmarket_sync.task_offers"
+msgid "Prices and stock"
+msgstr "Ceny i stany"
+
+msgctxt "Languages::allmarket_sync.task_orders"
+msgid "Orders"
+msgstr "Zamówienia"
+
+msgctxt "Languages::allmarket_sync.task_statuses"
+msgid "Status queue"
+msgstr "Kolejka statusów"
+
+msgctxt "Languages::allmarket_sync.task_feed"
+msgid "XML feed"
+msgstr "Feed XML"
+
+msgctxt "Languages::allmarket_sync.for_cabinet"
+msgid "For the allmarket.biz cabinet and cron"
+msgstr "Dla panelu allmarket.biz i crona"
+
+msgctxt "Languages::allmarket_sync.webhook_url"
+msgid "Webhook URL"
+msgstr "URL webhooka"
+
+msgctxt "Languages::allmarket_sync.webhook_secret"
+msgid "Webhook secret"
+msgstr "Sekret webhooka"
+
+msgctxt "Languages::allmarket_sync.reset"
+msgid "Change"
+msgstr "Zmień"
+
+msgctxt "Languages::allmarket_sync.feed_full"
+msgid "Full feed"
+msgstr "Pełny feed"
+
+msgctxt "Languages::allmarket_sync.feed_offers"
+msgid "Price & stock feed"
+msgstr "Feed cen i stanów"
+
+msgctxt "Languages::allmarket_sync.cron"
+msgid "Cron"
+msgstr "Cron"
+
+msgctxt "Languages::allmarket_sync.cron_help"
+msgid "Server cron (recommended): prices, stock, orders every 15 minutes, full catalog nightly."
+msgstr "Cron na serwerze (zalecane): ceny, stany i zamówienia co 15 minut, pełny katalog co noc."
+
+msgctxt "Languages::allmarket_sync.cron_web_help"
+msgid "Or call these URLs from an external cron service:"
+msgstr "Lub wywołuj te adresy zewnętrznym serwisem cron:"
+
+msgctxt "Languages::allmarket_sync.status_map"
+msgid "Order statuses"
+msgstr "Statusy zamówień"
+
+msgctxt "Languages::allmarket_sync.status_map_help"
+msgid "When an allmarket.biz order gets a status from this table, the add-on sends the matching portal status (and the tracking number of the latest shipment). Statuses received from the portal are applied in reverse (the first matching row)."
+msgstr "Gdy zamówienie z allmarket.biz otrzyma status z tej tabeli, moduł wysyła na portal odpowiedni status (i numer przesyłki z ostatniej wysyłki). Statusy z portalu są stosowane odwrotnie (pierwszy pasujący wiersz)."
+
+msgctxt "Languages::allmarket_sync.cscart_status"
+msgid "Store status"
+msgstr "Status sklepu"
+
+msgctxt "Languages::allmarket_sync.am_status"
+msgid "allmarket.biz status"
+msgstr "Status allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.not_sent"
+msgid "not sent"
+msgstr "nie wysyłaj"
+
+msgctxt "Languages::allmarket_sync.am_status_new"
+msgid "New"
+msgstr "Nowe"
+
+msgctxt "Languages::allmarket_sync.am_status_accepted"
+msgid "Accepted"
+msgstr "Przyjęte"
+
+msgctxt "Languages::allmarket_sync.am_status_processing"
+msgid "Processing"
+msgstr "W realizacji"
+
+msgctxt "Languages::allmarket_sync.am_status_shipped"
+msgid "Shipped"
+msgstr "Wysłane"
+
+msgctxt "Languages::allmarket_sync.am_status_delivered"
+msgid "Delivered"
+msgstr "Dostarczone"
+
+msgctxt "Languages::allmarket_sync.am_status_cancelled"
+msgid "Cancelled"
+msgstr "Anulowane"
+
+msgctxt "Languages::allmarket_sync.am_status_returned"
+msgid "Returned"
+msgstr "Zwrot"
+
+msgctxt "Languages::allmarket_sync.orders"
+msgid "allmarket.biz orders"
+msgstr "Zamówienia allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.sent"
+msgid "Sent to the portal"
+msgstr "Wysłano na portal"
+
+msgctxt "Languages::allmarket_sync.queued"
+msgid "queued"
+msgstr "w kolejce"
+
+msgctxt "Languages::allmarket_sync.retry"
+msgid "Retry"
+msgstr "Ponów"
+
+msgctxt "Languages::allmarket_sync.no_ack"
+msgid "not confirmed to the portal"
+msgstr "niepotwierdzone portalowi"
+
+msgctxt "Languages::allmarket_sync.log"
+msgid "Exchange log"
+msgstr "Dziennik wymiany"
+
+msgctxt "Languages::allmarket_sync.clear_log"
+msgid "Clear log"
+msgstr "Wyczyść dziennik"
+
+msgctxt "Languages::allmarket_sync.placement_feed_mode"
+msgid "In feed mode the portal reads the rules from the feed (allmarketId / allmarketParentId attributes of categories)."
+msgstr "W trybie feedu portal odczytuje reguły z feedu (atrybuty allmarketId / allmarketParentId kategorii)."
+
+msgctxt "Languages::allmarket_sync.portal_tree_unavailable"
+msgid "The category tree of allmarket.biz is not available, so the rules can only be edited as text."
+msgstr "Drzewo kategorii allmarket.biz jest niedostępne, więc reguły można edytować tylko jako tekst."
+
+msgctxt "Languages::allmarket_sync.placement_rules_help"
+msgid "One rule per line: shop_category_id=portal_category_id (the shop category is that portal category) or shop_category_id>portal_category_id (it is created inside that portal category). Subcategories follow their parent."
+msgstr "Jedna reguła w wierszu: id_kategorii_sklepu=id_kategorii_portalu (kategoria sklepu to ta kategoria portalu) lub id_kategorii_sklepu>id_kategorii_portalu (tworzona wewnątrz tej kategorii portalu). Podkategorie podążają za nadrzędną."
+
+msgctxt "Languages::allmarket_sync.load_portal_cats"
+msgid "Load categories from allmarket.biz"
+msgstr "Wczytaj kategorie z allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.reload_portal_cats"
+msgid "Reload categories from allmarket.biz"
+msgstr "Odśwież kategorie z allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.placement_help"
+msgid "Choose where each branch of your catalog goes on allmarket.biz. \"Is the portal category\" — products and subcategories go into the chosen portal category. \"Create inside\" — the shop category is created as a subcategory of the chosen one. Rows without a choice follow their parent; top-level categories without a choice are created at the portal root. Subcategories missing on the portal are created automatically."
+msgstr "Wybierz, gdzie na allmarket.biz trafia każda gałąź katalogu. „Odpowiada kategorii portalu” — produkty i podkategorie trafiają do wybranej kategorii portalu. „Utwórz wewnątrz” — kategoria sklepu jest tworzona jako podkategoria wybranej. Wiersze bez wyboru podążają za nadrzędną; kategorie najwyższego poziomu bez wyboru są tworzone w katalogu głównym portalu. Brakujące na portalu podkategorie są tworzone automatycznie."
+
+msgctxt "Languages::allmarket_sync.filter_categories"
+msgid "Filter shop categories"
+msgstr "Filtruj kategorie sklepu"
+
+msgctxt "Languages::allmarket_sync.shop_category"
+msgid "Shop category"
+msgstr "Kategoria sklepu"
+
+msgctxt "Languages::allmarket_sync.portal_category"
+msgid "allmarket.biz category"
+msgstr "Kategoria allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.how"
+msgid "How"
+msgstr "Jak"
+
+msgctxt "Languages::allmarket_sync.result_on_portal"
+msgid "Result on allmarket.biz"
+msgstr "Wynik na allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.mode_map"
+msgid "Is the portal category"
+msgstr "Odpowiada kategorii portalu"
+
+msgctxt "Languages::allmarket_sync.mode_inside"
+msgid "Create inside"
+msgstr "Utwórz wewnątrz"
+
+msgctxt "Languages::allmarket_sync.send_now"
+msgid "Send the catalog to allmarket.biz right after saving"
+msgstr "Wyślij katalog na allmarket.biz zaraz po zapisaniu"
+
+msgctxt "Languages::allmarket_sync.follows_parent"
+msgid "— follows the parent —"
+msgstr "— jak nadrzędna —"
+
+msgctxt "Languages::allmarket_sync.not_found_on_portal"
+msgid "not found on allmarket.biz"
+msgstr "nie znaleziono na allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.settings_info"
+msgid "Tasks, URLs for the allmarket.biz cabinet, status mapping, orders and the log are on the add-on page."
+msgstr "Zadania, adresy dla panelu allmarket.biz, mapowanie statusów, zamówienia i dziennik są na stronie modułu."
+
+msgctxt "SettingsSections::allmarket_sync::connection"
+msgid "Connection"
+msgstr "Połączenie"
+
+msgctxt "SettingsSections::allmarket_sync::catalog"
+msgid "Catalog"
+msgstr "Katalog"
+
+msgctxt "SettingsSections::allmarket_sync::orders"
+msgid "Orders"
+msgstr "Zamówienia"
+
+msgctxt "SettingsOptions::allmarket_sync::mode"
+msgid "Exchange mode"
+msgstr "Tryb wymiany"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::api"
+msgid "API (recommended)"
+msgstr "API (zalecane)"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::feed"
+msgid "XML feed only"
+msgstr "Tylko feed XML"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::both"
+msgid "API + XML feed"
+msgstr "API + feed XML"
+
+msgctxt "SettingsOptions::allmarket_sync::api_url"
+msgid "API URL"
+msgstr "Adres API"
+
+msgctxt "SettingsOptions::allmarket_sync::api_key"
+msgid "API key"
+msgstr "Klucz API"
+
+msgctxt "SettingsTooltips::allmarket_sync::api_key"
+msgid "allmarket.biz cabinet → Integrations → Online store → create a key."
+msgstr "Panel allmarket.biz → Integracje → Sklep internetowy → utwórz klucz."
+
+msgctxt "SettingsOptions::allmarket_sync::shop_id"
+msgid "Seller ID"
+msgstr "ID sprzedawcy"
+
+msgctxt "SettingsTooltips::allmarket_sync::shop_id"
+msgid "Shown next to the API key in the allmarket.biz cabinet."
+msgstr "Widoczny obok klucza API w panelu allmarket.biz."
+
+msgctxt "SettingsOptions::allmarket_sync::info"
+msgid "Exchange page"
+msgstr "Strona wymiany"
+
+msgctxt "SettingsOptions::allmarket_sync::lang_code"
+msgid "Language of names and descriptions"
+msgstr "Język nazw i opisów"
+
+msgctxt "SettingsOptions::allmarket_sync::currency"
+msgid "Price currency"
+msgstr "Waluta cen"
+
+msgctxt "SettingsTooltips::allmarket_sync::currency"
+msgid "Prices are converted from the primary currency at the store rate. Use the same currency as in the allmarket.biz cabinet."
+msgstr "Ceny są przeliczane z waluty głównej po kursie sklepu. Użyj tej samej waluty co w panelu allmarket.biz."
+
+msgctxt "SettingsOptions::allmarket_sync::categories"
+msgid "Export only categories (IDs)"
+msgstr "Eksportuj tylko kategorie (ID)"
+
+msgctxt "SettingsTooltips::allmarket_sync::categories"
+msgid "Comma-separated category IDs, subcategories included. Empty — the whole catalog."
+msgstr "ID kategorii po przecinku, łącznie z podkategoriami. Puste — cały katalog."
+
+msgctxt "SettingsOptions::allmarket_sync::variations"
+msgid "Export variations as separate offers"
+msgstr "Eksportuj warianty jako osobne oferty"
+
+msgctxt "SettingsTooltips::allmarket_sync::variations"
+msgid "Variations of one product share group_id and carry their variation features. Off — only parent products."
+msgstr "Warianty jednego produktu mają wspólny group_id i własne cechy wariantu. Wyłączone — tylko produkty nadrzędne."
+
+msgctxt "SettingsOptions::allmarket_sync::only_in_stock"
+msgid "Only products available for order"
+msgstr "Tylko produkty dostępne do zamówienia"
+
+msgctxt "SettingsOptions::allmarket_sync::price_markup"
+msgid "Price markup, %"
+msgstr "Narzut na ceny, %"
+
+msgctxt "SettingsTooltips::allmarket_sync::price_markup"
+msgid "Applied to the price and the old price. Negative value — a discount."
+msgstr "Stosowany do ceny i starej ceny. Wartość ujemna — rabat."
+
+msgctxt "SettingsOptions::allmarket_sync::batch_size"
+msgid "Products per request"
+msgstr "Produktów w żądaniu"
+
+msgctxt "SettingsOptions::allmarket_sync::orders_enabled"
+msgid "Import orders"
+msgstr "Importuj zamówienia"
+
+msgctxt "SettingsOptions::allmarket_sync::status_new"
+msgid "Status of a new order"
+msgstr "Status nowego zamówienia"
+
+msgctxt "SettingsOptions::allmarket_sync::status_paid"
+msgid "Status of a paid order"
+msgstr "Status opłaconego zamówienia"
+
+msgctxt "SettingsOptions::allmarket_sync::shipping_id"
+msgid "Shipping method"
+msgstr "Metoda dostawy"
+
+msgctxt "SettingsTooltips::allmarket_sync::shipping_id"
+msgid "The delivery details from allmarket.biz (city, warehouse) go to the order address and notes."
+msgstr "Dane dostawy z allmarket.biz (miasto, oddział) trafiają do adresu i uwag zamówienia."
+
+msgctxt "SettingsOptions::allmarket_sync::payment_id"
+msgid "Payment method"
+msgstr "Metoda płatności"
+
+msgctxt "SettingsOptions::allmarket_sync::default_country"
+msgid "Default country (code)"
+msgstr "Kraj domyślny (kod)"
+
+msgctxt "SettingsOptions::allmarket_sync::use_am_prices"
+msgid "Prices from the allmarket.biz order"
+msgstr "Ceny z zamówienia allmarket.biz"
+
+msgctxt "SettingsTooltips::allmarket_sync::use_am_prices"
+msgid "Off — the order uses the current store prices."
+msgstr "Wyłączone — zamówienie używa bieżących cen sklepu."
+
+msgctxt "SettingsOptions::allmarket_sync::use_am_shipping"
+msgid "Shipping cost from the allmarket.biz order"
+msgstr "Koszt dostawy z zamówienia allmarket.biz"
+
+msgctxt "SettingsOptions::allmarket_sync::notify_customer"
+msgid "Notify the customer by e-mail"
+msgstr "Powiadamiaj klienta e-mailem"
+
+msgctxt "SettingsOptions::allmarket_sync::notify_admin"
+msgid "Notify the order department"
+msgstr "Powiadamiaj dział zamówień"

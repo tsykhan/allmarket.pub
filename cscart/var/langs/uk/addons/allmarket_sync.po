@@ -1,0 +1,474 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Ukrainian\n"
+"Language: uk_UA\n"
+
+msgctxt "Addons::name::allmarket_sync"
+msgid "allmarket.biz Sync"
+msgstr "Обмін з allmarket.biz"
+
+msgctxt "Addons::description::allmarket_sync"
+msgid "Exchange with the allmarket.biz marketplace: catalog with categories and variations, prices and stock, orders and statuses (Seller API or XML feed)."
+msgstr "Обмін з маркетплейсом allmarket.biz: каталог з категоріями та варіаціями, ціни й залишки, замовлення та статуси (Seller API або XML-фід)."
+
+msgctxt "Languages::allmarket_sync"
+msgid "allmarket.biz"
+msgstr "allmarket.biz"
+
+msgctxt "Languages::allmarket_sync_menu_description"
+msgid "Exchange of the catalog and orders with the allmarket.biz marketplace"
+msgstr "Обмін каталогом і замовленнями з маркетплейсом allmarket.biz"
+
+msgctxt "Languages::allmarket_sync_manage"
+msgid "Exchange"
+msgstr "Обмін"
+
+msgctxt "Languages::allmarket_sync_manage_menu_description"
+msgid "Connection, tasks, orders and log"
+msgstr "Підключення, завдання, замовлення та журнал"
+
+msgctxt "Languages::allmarket_sync_categories"
+msgid "Category placement"
+msgstr "Розміщення категорій"
+
+msgctxt "Languages::allmarket_sync_categories_menu_description"
+msgid "Where shop categories go on allmarket.biz"
+msgstr "Куди потрапляють категорії магазину на allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.task_done"
+msgid "Task [task] finished: [stats]"
+msgstr "Завдання [task] виконано: [stats]"
+
+msgctxt "Languages::allmarket_sync.ping_ok"
+msgid "Connected: [name] (ID [id]), seller currency on the portal: [currency]"
+msgstr "З'єднання встановлено: [name] (ID [id]), валюта продавця на порталі: [currency]"
+
+msgctxt "Languages::allmarket_sync.currency_mismatch"
+msgid "Your seller currency on allmarket.biz is [portal], while the add-on exports prices in [shop]. The portal converts them at its rate; set the same currency to avoid differences."
+msgstr "Валюта продавця на allmarket.biz — [portal], а модуль вивантажує ціни в [shop]. Портал перерахує їх за своїм курсом; щоб уникнути розбіжностей, встановіть однакову валюту."
+
+msgctxt "Languages::allmarket_sync.secret_reset"
+msgid "The key has been changed. Update it in the allmarket.biz cabinet and in your cron."
+msgstr "Ключ змінено. Оновіть його в кабінеті allmarket.biz і в cron."
+
+msgctxt "Languages::allmarket_sync.placement_saved"
+msgid "Placement rules saved: [count]"
+msgstr "Збережено правил розміщення: [count]"
+
+msgctxt "Languages::allmarket_sync.portal_cats_loaded"
+msgid "allmarket.biz categories loaded: [count]"
+msgstr "Завантажено категорій allmarket.biz: [count]"
+
+msgctxt "Languages::allmarket_sync.connection"
+msgid "Connection"
+msgstr "Підключення"
+
+msgctxt "Languages::allmarket_sync.status"
+msgid "Status"
+msgstr "Стан"
+
+msgctxt "Languages::allmarket_sync.configured"
+msgid "API key is set"
+msgstr "API-ключ вказано"
+
+msgctxt "Languages::allmarket_sync.not_configured"
+msgid "API URL or key is not set"
+msgstr "Не вказано адресу API або ключ"
+
+msgctxt "Languages::allmarket_sync.mode"
+msgid "Mode"
+msgstr "Режим"
+
+msgctxt "Languages::allmarket_sync.mode_api"
+msgid "API"
+msgstr "API"
+
+msgctxt "Languages::allmarket_sync.mode_feed"
+msgid "XML feed"
+msgstr "XML-фід"
+
+msgctxt "Languages::allmarket_sync.mode_both"
+msgid "API + XML feed"
+msgstr "API + XML-фід"
+
+msgctxt "Languages::allmarket_sync.check_connection"
+msgid "Check connection"
+msgstr "Перевірити з'єднання"
+
+msgctxt "Languages::allmarket_sync.tasks"
+msgid "Tasks"
+msgstr "Завдання"
+
+msgctxt "Languages::allmarket_sync.task"
+msgid "Task"
+msgstr "Завдання"
+
+msgctxt "Languages::allmarket_sync.last_run"
+msgid "Last run"
+msgstr "Останній запуск"
+
+msgctxt "Languages::allmarket_sync.result"
+msgid "Result"
+msgstr "Результат"
+
+msgctxt "Languages::allmarket_sync.run"
+msgid "Run"
+msgstr "Запустити"
+
+msgctxt "Languages::allmarket_sync.force"
+msgid "Force (resend everything, delete without the safety check)"
+msgstr "Примусово (надіслати все, видаляти без перевірки)"
+
+msgctxt "Languages::allmarket_sync.force_help"
+msgid "Without it only changes are sent, and if more than half of the products disappear from the export at once they are not deleted on the portal."
+msgstr "Без нього надсилаються лише зміни, а якщо з вивантаження зникає понад половину товарів — на порталі вони не видаляються."
+
+msgctxt "Languages::allmarket_sync.items_on_portal"
+msgid "Products known to the portal"
+msgstr "Товари, відомі порталу"
+
+msgctxt "Languages::allmarket_sync.task_catalog"
+msgid "Catalog"
+msgstr "Каталог"
+
+msgctxt "Languages::allmarket_sync.task_offers"
+msgid "Prices and stock"
+msgstr "Ціни та залишки"
+
+msgctxt "Languages::allmarket_sync.task_orders"
+msgid "Orders"
+msgstr "Замовлення"
+
+msgctxt "Languages::allmarket_sync.task_statuses"
+msgid "Status queue"
+msgstr "Черга статусів"
+
+msgctxt "Languages::allmarket_sync.task_feed"
+msgid "XML feed"
+msgstr "XML-фід"
+
+msgctxt "Languages::allmarket_sync.for_cabinet"
+msgid "For the allmarket.biz cabinet and cron"
+msgstr "Для кабінету allmarket.biz і cron"
+
+msgctxt "Languages::allmarket_sync.webhook_url"
+msgid "Webhook URL"
+msgstr "URL вебхука"
+
+msgctxt "Languages::allmarket_sync.webhook_secret"
+msgid "Webhook secret"
+msgstr "Секрет вебхука"
+
+msgctxt "Languages::allmarket_sync.reset"
+msgid "Change"
+msgstr "Змінити"
+
+msgctxt "Languages::allmarket_sync.feed_full"
+msgid "Full feed"
+msgstr "Повний фід"
+
+msgctxt "Languages::allmarket_sync.feed_offers"
+msgid "Price & stock feed"
+msgstr "Фід цін і залишків"
+
+msgctxt "Languages::allmarket_sync.cron"
+msgid "Cron"
+msgstr "Cron"
+
+msgctxt "Languages::allmarket_sync.cron_help"
+msgid "Server cron (recommended): prices, stock, orders every 15 minutes, full catalog nightly."
+msgstr "Cron на сервері (рекомендовано): ціни, залишки та замовлення кожні 15 хвилин, повний каталог щоночі."
+
+msgctxt "Languages::allmarket_sync.cron_web_help"
+msgid "Or call these URLs from an external cron service:"
+msgstr "Або викликайте ці адреси зовнішнім cron-сервісом:"
+
+msgctxt "Languages::allmarket_sync.status_map"
+msgid "Order statuses"
+msgstr "Статуси замовлень"
+
+msgctxt "Languages::allmarket_sync.status_map_help"
+msgid "When an allmarket.biz order gets a status from this table, the add-on sends the matching portal status (and the tracking number of the latest shipment). Statuses received from the portal are applied in reverse (the first matching row)."
+msgstr "Коли замовлення з allmarket.biz отримує статус із цієї таблиці, модуль надсилає на портал відповідний статус (і номер ТТН з останнього відвантаження). Статуси з порталу застосовуються у зворотному напрямку (перший відповідний рядок)."
+
+msgctxt "Languages::allmarket_sync.cscart_status"
+msgid "Store status"
+msgstr "Статус магазину"
+
+msgctxt "Languages::allmarket_sync.am_status"
+msgid "allmarket.biz status"
+msgstr "Статус allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.not_sent"
+msgid "not sent"
+msgstr "не надсилати"
+
+msgctxt "Languages::allmarket_sync.am_status_new"
+msgid "New"
+msgstr "Нове"
+
+msgctxt "Languages::allmarket_sync.am_status_accepted"
+msgid "Accepted"
+msgstr "Прийняте"
+
+msgctxt "Languages::allmarket_sync.am_status_processing"
+msgid "Processing"
+msgstr "Обробляється"
+
+msgctxt "Languages::allmarket_sync.am_status_shipped"
+msgid "Shipped"
+msgstr "Відправлене"
+
+msgctxt "Languages::allmarket_sync.am_status_delivered"
+msgid "Delivered"
+msgstr "Доставлене"
+
+msgctxt "Languages::allmarket_sync.am_status_cancelled"
+msgid "Cancelled"
+msgstr "Скасоване"
+
+msgctxt "Languages::allmarket_sync.am_status_returned"
+msgid "Returned"
+msgstr "Повернення"
+
+msgctxt "Languages::allmarket_sync.orders"
+msgid "allmarket.biz orders"
+msgstr "Замовлення allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.sent"
+msgid "Sent to the portal"
+msgstr "Надіслано на портал"
+
+msgctxt "Languages::allmarket_sync.queued"
+msgid "queued"
+msgstr "у черзі"
+
+msgctxt "Languages::allmarket_sync.retry"
+msgid "Retry"
+msgstr "Повторити"
+
+msgctxt "Languages::allmarket_sync.no_ack"
+msgid "not confirmed to the portal"
+msgstr "не підтверджено порталу"
+
+msgctxt "Languages::allmarket_sync.log"
+msgid "Exchange log"
+msgstr "Журнал обміну"
+
+msgctxt "Languages::allmarket_sync.clear_log"
+msgid "Clear log"
+msgstr "Очистити журнал"
+
+msgctxt "Languages::allmarket_sync.placement_feed_mode"
+msgid "In feed mode the portal reads the rules from the feed (allmarketId / allmarketParentId attributes of categories)."
+msgstr "У режимі фіду портал читає правила з фіду (атрибути allmarketId / allmarketParentId категорій)."
+
+msgctxt "Languages::allmarket_sync.portal_tree_unavailable"
+msgid "The category tree of allmarket.biz is not available, so the rules can only be edited as text."
+msgstr "Дерево категорій allmarket.biz недоступне, тому правила можна редагувати лише текстом."
+
+msgctxt "Languages::allmarket_sync.placement_rules_help"
+msgid "One rule per line: shop_category_id=portal_category_id (the shop category is that portal category) or shop_category_id>portal_category_id (it is created inside that portal category). Subcategories follow their parent."
+msgstr "Одне правило в рядку: id_категорії_магазину=id_категорії_порталу (категорія магазину і є цією категорією порталу) або id_категорії_магазину>id_категорії_порталу (створюється всередині цієї категорії порталу). Підкатегорії йдуть за батьківською."
+
+msgctxt "Languages::allmarket_sync.load_portal_cats"
+msgid "Load categories from allmarket.biz"
+msgstr "Завантажити категорії з allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.reload_portal_cats"
+msgid "Reload categories from allmarket.biz"
+msgstr "Оновити категорії з allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.placement_help"
+msgid "Choose where each branch of your catalog goes on allmarket.biz. \"Is the portal category\" — products and subcategories go into the chosen portal category. \"Create inside\" — the shop category is created as a subcategory of the chosen one. Rows without a choice follow their parent; top-level categories without a choice are created at the portal root. Subcategories missing on the portal are created automatically."
+msgstr "Оберіть, куди на allmarket.biz потрапляє кожна гілка каталогу. «Відповідає категорії порталу» — товари й підкатегорії йдуть у вибрану категорію порталу. «Створити всередині» — категорія магазину створюється підкатегорією вибраної. Рядки без вибору йдуть за батьківською; категорії верхнього рівня без вибору створюються в корені порталу. Відсутні на порталі підкатегорії створюються автоматично."
+
+msgctxt "Languages::allmarket_sync.filter_categories"
+msgid "Filter shop categories"
+msgstr "Фільтр категорій магазину"
+
+msgctxt "Languages::allmarket_sync.shop_category"
+msgid "Shop category"
+msgstr "Категорія магазину"
+
+msgctxt "Languages::allmarket_sync.portal_category"
+msgid "allmarket.biz category"
+msgstr "Категорія allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.how"
+msgid "How"
+msgstr "Як"
+
+msgctxt "Languages::allmarket_sync.result_on_portal"
+msgid "Result on allmarket.biz"
+msgstr "Результат на allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.mode_map"
+msgid "Is the portal category"
+msgstr "Відповідає категорії порталу"
+
+msgctxt "Languages::allmarket_sync.mode_inside"
+msgid "Create inside"
+msgstr "Створити всередині"
+
+msgctxt "Languages::allmarket_sync.send_now"
+msgid "Send the catalog to allmarket.biz right after saving"
+msgstr "Надіслати каталог на allmarket.biz одразу після збереження"
+
+msgctxt "Languages::allmarket_sync.follows_parent"
+msgid "— follows the parent —"
+msgstr "— як у батьківської —"
+
+msgctxt "Languages::allmarket_sync.not_found_on_portal"
+msgid "not found on allmarket.biz"
+msgstr "не знайдено на allmarket.biz"
+
+msgctxt "Languages::allmarket_sync.settings_info"
+msgid "Tasks, URLs for the allmarket.biz cabinet, status mapping, orders and the log are on the add-on page."
+msgstr "Завдання, адреси для кабінету allmarket.biz, відповідність статусів, замовлення та журнал — на сторінці модуля."
+
+msgctxt "SettingsSections::allmarket_sync::connection"
+msgid "Connection"
+msgstr "Підключення"
+
+msgctxt "SettingsSections::allmarket_sync::catalog"
+msgid "Catalog"
+msgstr "Каталог"
+
+msgctxt "SettingsSections::allmarket_sync::orders"
+msgid "Orders"
+msgstr "Замовлення"
+
+msgctxt "SettingsOptions::allmarket_sync::mode"
+msgid "Exchange mode"
+msgstr "Режим обміну"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::api"
+msgid "API (recommended)"
+msgstr "API (рекомендовано)"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::feed"
+msgid "XML feed only"
+msgstr "Лише XML-фід"
+
+msgctxt "SettingsVariants::allmarket_sync::mode::both"
+msgid "API + XML feed"
+msgstr "API + XML-фід"
+
+msgctxt "SettingsOptions::allmarket_sync::api_url"
+msgid "API URL"
+msgstr "Адреса API"
+
+msgctxt "SettingsOptions::allmarket_sync::api_key"
+msgid "API key"
+msgstr "API-ключ"
+
+msgctxt "SettingsTooltips::allmarket_sync::api_key"
+msgid "allmarket.biz cabinet → Integrations → Online store → create a key."
+msgstr "Кабінет allmarket.biz → Інтеграції → Інтернет-магазин → створити ключ."
+
+msgctxt "SettingsOptions::allmarket_sync::shop_id"
+msgid "Seller ID"
+msgstr "ID продавця"
+
+msgctxt "SettingsTooltips::allmarket_sync::shop_id"
+msgid "Shown next to the API key in the allmarket.biz cabinet."
+msgstr "Показано поруч з API-ключем у кабінеті allmarket.biz."
+
+msgctxt "SettingsOptions::allmarket_sync::info"
+msgid "Exchange page"
+msgstr "Сторінка обміну"
+
+msgctxt "SettingsOptions::allmarket_sync::lang_code"
+msgid "Language of names and descriptions"
+msgstr "Мова назв і описів"
+
+msgctxt "SettingsOptions::allmarket_sync::currency"
+msgid "Price currency"
+msgstr "Валюта цін"
+
+msgctxt "SettingsTooltips::allmarket_sync::currency"
+msgid "Prices are converted from the primary currency at the store rate. Use the same currency as in the allmarket.biz cabinet."
+msgstr "Ціни перераховуються з основної валюти за курсом магазину. Використовуйте ту саму валюту, що й у кабінеті allmarket.biz."
+
+msgctxt "SettingsOptions::allmarket_sync::categories"
+msgid "Export only categories (IDs)"
+msgstr "Вивантажувати лише категорії (ID)"
+
+msgctxt "SettingsTooltips::allmarket_sync::categories"
+msgid "Comma-separated category IDs, subcategories included. Empty — the whole catalog."
+msgstr "ID категорій через кому, разом з підкатегоріями. Порожньо — весь каталог."
+
+msgctxt "SettingsOptions::allmarket_sync::variations"
+msgid "Export variations as separate offers"
+msgstr "Вивантажувати варіації окремими пропозиціями"
+
+msgctxt "SettingsTooltips::allmarket_sync::variations"
+msgid "Variations of one product share group_id and carry their variation features. Off — only parent products."
+msgstr "Варіації одного товару мають спільний group_id і свої характеристики варіації. Вимкнено — лише батьківські товари."
+
+msgctxt "SettingsOptions::allmarket_sync::only_in_stock"
+msgid "Only products available for order"
+msgstr "Лише товари, доступні для замовлення"
+
+msgctxt "SettingsOptions::allmarket_sync::price_markup"
+msgid "Price markup, %"
+msgstr "Націнка на ціни, %"
+
+msgctxt "SettingsTooltips::allmarket_sync::price_markup"
+msgid "Applied to the price and the old price. Negative value — a discount."
+msgstr "Застосовується до ціни й старої ціни. Від'ємне значення — знижка."
+
+msgctxt "SettingsOptions::allmarket_sync::batch_size"
+msgid "Products per request"
+msgstr "Товарів у запиті"
+
+msgctxt "SettingsOptions::allmarket_sync::orders_enabled"
+msgid "Import orders"
+msgstr "Імпортувати замовлення"
+
+msgctxt "SettingsOptions::allmarket_sync::status_new"
+msgid "Status of a new order"
+msgstr "Статус нового замовлення"
+
+msgctxt "SettingsOptions::allmarket_sync::status_paid"
+msgid "Status of a paid order"
+msgstr "Статус оплаченого замовлення"
+
+msgctxt "SettingsOptions::allmarket_sync::shipping_id"
+msgid "Shipping method"
+msgstr "Спосіб доставки"
+
+msgctxt "SettingsTooltips::allmarket_sync::shipping_id"
+msgid "The delivery details from allmarket.biz (city, warehouse) go to the order address and notes."
+msgstr "Дані доставки з allmarket.biz (місто, відділення) записуються в адресу та коментар замовлення."
+
+msgctxt "SettingsOptions::allmarket_sync::payment_id"
+msgid "Payment method"
+msgstr "Спосіб оплати"
+
+msgctxt "SettingsOptions::allmarket_sync::default_country"
+msgid "Default country (code)"
+msgstr "Країна за замовчуванням (код)"
+
+msgctxt "SettingsOptions::allmarket_sync::use_am_prices"
+msgid "Prices from the allmarket.biz order"
+msgstr "Ціни із замовлення allmarket.biz"
+
+msgctxt "SettingsTooltips::allmarket_sync::use_am_prices"
+msgid "Off — the order uses the current store prices."
+msgstr "Вимкнено — у замовленні поточні ціни магазину."
+
+msgctxt "SettingsOptions::allmarket_sync::use_am_shipping"
+msgid "Shipping cost from the allmarket.biz order"
+msgstr "Вартість доставки із замовлення allmarket.biz"
+
+msgctxt "SettingsOptions::allmarket_sync::notify_customer"
+msgid "Notify the customer by e-mail"
+msgstr "Сповіщати покупця e-mail"
+
+msgctxt "SettingsOptions::allmarket_sync::notify_admin"
+msgid "Notify the order department"
+msgstr "Сповіщати відділ замовлень"
